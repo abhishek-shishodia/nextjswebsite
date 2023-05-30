@@ -2,7 +2,7 @@
 import MovieCard from "@/app/components/MovieCard";
 
 import styles from "@/app/styles/common.module.css"
-import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
+
 
 const Movie = async () => {
 
@@ -19,8 +19,9 @@ const Movie = async () => {
     //     }
     // };
 
-    const url= process.env.RAPID_KEY;
-    const options = {
+    // const url= process.env.RAPID_KEY;
+    const url=process.env.RAPID_KEY;
+    const options={
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': '60db50c90amsh05f30a93f098702p167920jsn8810b013be6f',
