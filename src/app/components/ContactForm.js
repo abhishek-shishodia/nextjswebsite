@@ -33,7 +33,7 @@ const ContactForm = () => {
         try {
             const response = await fetch('/api/contact', {
                 method:'POST',
-                headers:{"Content_Type":"application/json"},
+                headers:{"Content_Type":"appliucation/json"},
                 body: JSON.stringify({
                     username:user.username,
                     email:user.email,
@@ -123,7 +123,7 @@ const ContactForm = () => {
                 {status === 'success' && <p className={styles.success_msg}>Thank you for your message!</p>}
                 {status === 'error' && <p className={styles.error_msg}>There was an error submitting your message. Please try again.</p>}
 
-                <button type="submit" className={mulish.className}>Send Message</button>
+                <button type="submit" className={mulish.className} >Send Message</button>
             </div>
         </form>
     );

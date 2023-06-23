@@ -10,6 +10,8 @@ html {
     overflow-x: hidden;
 }
 
+.rotate-diagonal-1{-webkit-animation:rotate-diagonal-1 .4s linear both;animation:rotate-diagonal-1 .4s linear both}
+
 /* Remove default margin and padding */
 html,
 body,
@@ -76,6 +78,7 @@ ol, li {
 
 /* CSS */
 button {
+    
     background-color: #161617;
     border-radius: 2.4rem;
     border-style: none;
